@@ -199,6 +199,6 @@ void f(int n)
 ```
 #####  Enforcement
 
-(Moderate) Warn if an object is allocated and then deallocated on all paths within a function. Suggest it should be a local auto stack object instead.
-(Simple) Warn if a local Unique_ptr or Shared_ptr is not moved, copied, reassigned or reset before its lifetime ends.
+* (Moderate) Warn if an object is allocated and then deallocated on all paths within a function. Suggest it should be a local auto stack object instead.
+* (Simple) Warn if a local Unique_ptr or Shared_ptr is not moved, copied, reassigned or reset before its lifetime ends.
 
